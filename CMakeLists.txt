@@ -1,6 +1,8 @@
 cmake_minimum_required(VERSION 3.12)
 project(hello-world)
 
+set(CMAKE_BUILD_TYPE RelWithDebInfo)
+
 if(UNIX)
     # Enable profiling with gprof
     set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -pg")
