@@ -19,5 +19,11 @@ make
 ./build/hello-world
 ```
 
+## Profiling (Linux)
+```bash
+./build/hello-world #the executable must be run once first.
+gprof ./build/hello-world
+```
+
 ## Build and Run (Windows)
 Open this folder with Visual Studio, then build and execute like any other Visual Studio project.
