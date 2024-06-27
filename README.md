@@ -26,4 +26,10 @@ gprof ./build/hello-world
 ```
 
 ## Build and Run (Windows)
-Open this folder with Visual Studio, then build and execute like any other Visual Studio project.
+```powershell
+mkdir build;
+cd build;
+cmake ..;
+cmake --build . --config Release;
+./build/Release/hello-world.exe
+```
