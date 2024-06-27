@@ -30,6 +30,9 @@ gprof ./build/hello-world
 mkdir build;
 cd build;
 cmake ..;
-cmake --build . --config RelWithDebInfo; #set(CMAKE_BUILD_TYPE ...) is ignored by MSVC. On the other hand, --config option in cmake --build ... is ignored by GCC.
+cmake --build . --config RelWithDebInfo; 
+#set(CMAKE_BUILD_TYPE ...) in CMakeLists.txt is ignored by MSVC. 
+#On the other hand, --config option in cmake --build ... is ignored by GCC.
+
 ./build/RelWithDebInfo/hello-world.exe
 ```
